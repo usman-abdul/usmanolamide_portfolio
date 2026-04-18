@@ -1,0 +1,123 @@
+@use 'variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $bg-primary;
+  color: $text-primary;
+  font-family: $font-body;
+  font-size: $text-base;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: $font-body;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $space-lg;
+
+  @media (max-width: 768px) {
+    padding: 0 $space-sm;
+  }
+}
+
+.section {
+  padding: $space-3xl 0;
+
+  @media (max-width: 768px) {
+    padding: $space-2xl 0;
+  }
+}
+
+.section-label {
+  font-size: $text-xs;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $accent;
+  margin-bottom: $space-sm;
+}
+
+.section-title {
+  font-family: $font-heading;
+  font-size: $h2;
+  color: $text-primary;
+  margin-bottom: $space-md;
+  line-height: 1.2;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-xs;
+  padding: 0.75rem 1.75rem;
+  border-radius: $radius-sm;
+  font-size: $text-sm;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: $transition;
+
+  &-primary {
+    background: $accent;
+    color: #fff;
+
+    &:hover {
+      background: $accent-hover;
+      transform: translateY(-2px);
+      box-shadow: $shadow-glow;
+    }
+  }
+
+  &-outline {
+    border: 1px solid $border-hover;
+    color: $accent;
+
+    &:hover {
+      background: $accent-glow;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+::selection {
+  background: $accent;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: $bg-primary;
+}
+::-webkit-scrollbar-thumb {
+  background: $text-muted;
+  border-radius: 3px;
+}

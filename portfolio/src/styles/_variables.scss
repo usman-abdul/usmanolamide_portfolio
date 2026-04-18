@@ -1,0 +1,53 @@
+// Colors
+$bg-primary: #0a0e1a;
+$bg-secondary: #0f1628;
+$bg-card: #131929;
+$bg-card-hover: #1a2235;
+$accent: #4f8ef7;
+$accent-glow: rgba(79, 142, 247, 0.15);
+$accent-hover: #6ba3ff;
+$text-primary: #e8eaf0;
+$text-secondary: #8892a4;
+$text-muted: #4a5568;
+$border: rgba(79, 142, 247, 0.12);
+$border-hover: rgba(79, 142, 247, 0.35);
+
+// Typography
+$font-body: 'Inter', sans-serif;
+$font-heading: 'DM Serif Display', serif;
+
+$h1: 3rem;       // 48px
+$h2: 2rem;       // 32px
+$h3: 1.5rem;     // 24px
+$h4: 1.25rem;    // 20px
+$text-lg: 1.125rem;
+$text-base: 1rem;
+$text-sm: 0.875rem;
+$text-xs: 0.75rem;
+
+// Spacing
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 1.5rem;
+$space-lg: 2rem;
+$space-xl: 3rem;
+$space-2xl: 5rem;
+$space-3xl: 8rem;
+
+// Layout
+$max-width: 1200px;
+$nav-height: 72px;
+
+// Borders
+$radius-sm: 6px;
+$radius-md: 12px;
+$radius-lg: 20px;
+
+// Shadows / Elevation
+$shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
+$shadow-card-hover: 0 8px 40px rgba(79, 142, 247, 0.15);
+$shadow-glow: 0 0 30px rgba(79, 142, 247, 0.2);
+
+// Transitions
+$transition: all 0.25s ease;
+$transition-slow: all 0.4s ease;

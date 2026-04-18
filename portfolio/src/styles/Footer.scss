@@ -1,0 +1,41 @@
+@use 'variables' as *;
+
+.footer {
+  border-top: 1px solid $border;
+  padding: $space-xl 0;
+
+  &__inner {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 $space-lg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 640px) {
+      flex-direction: column;
+      gap: $space-md;
+      text-align: center;
+    }
+  }
+
+  &__copy {
+    font-size: $text-sm;
+    color: $text-muted;
+  }
+
+  &__links {
+    display: flex;
+    gap: $space-md;
+
+    a {
+      font-size: $text-sm;
+      color: $text-secondary;
+      transition: $transition;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+}

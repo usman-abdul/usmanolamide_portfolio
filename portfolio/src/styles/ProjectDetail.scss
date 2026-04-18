@@ -1,0 +1,217 @@
+@use 'variables' as *;
+
+.project-detail {
+  padding-top: calc($nav-height + $space-2xl);
+  padding-bottom: $space-3xl;
+
+  &__inner {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 $space-lg;
+  }
+
+  &__back {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-xs;
+    font-size: $text-sm;
+    color: $text-secondary;
+    margin-bottom: $space-xl;
+    transition: $transition;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    gap: $space-xs;
+    flex-wrap: wrap;
+    margin-bottom: $space-md;
+  }
+
+  &__tag {
+    font-size: $text-xs;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $accent;
+    background: $accent-glow;
+    padding: 4px 12px;
+    border-radius: 100px;
+    border: 1px solid rgba(79, 142, 247, 0.2);
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    line-height: 1.15;
+    margin-bottom: $space-sm;
+  }
+
+  &__tagline {
+    font-size: $text-lg;
+    color: $text-secondary;
+    margin-bottom: $space-xl;
+  }
+
+  &__hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: $radius-lg;
+    border: 1px solid $border;
+    margin-bottom: $space-2xl;
+    background: $bg-card;
+
+    @media (max-width: 640px) {
+      height: 220px;
+    }
+  }
+
+  &__hero-placeholder {
+    width: 100%;
+    height: 400px;
+    border-radius: $radius-lg;
+    border: 1px solid $border;
+    margin-bottom: $space-2xl;
+    background: linear-gradient(135deg, $bg-secondary 0%, $bg-card-hover 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    opacity: 0.4;
+
+    @media (max-width: 640px) {
+      height: 220px;
+    }
+  }
+
+  // Metrics
+  &__metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $space-sm;
+    margin-bottom: $space-2xl;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__metric {
+    background: $bg-card;
+    border: 1px solid $border;
+    border-radius: $radius-md;
+    padding: $space-md;
+    text-align: center;
+
+    .metric-value {
+      font-family: $font-heading;
+      font-size: 1.75rem;
+      color: $accent;
+      display: block;
+      line-height: 1.1;
+    }
+
+    .metric-label {
+      font-size: $text-xs;
+      color: $text-secondary;
+      margin-top: 6px;
+      line-height: 1.4;
+    }
+  }
+
+  // Content sections
+  &__section {
+    margin-bottom: $space-2xl;
+
+    h2 {
+      font-family: $font-heading;
+      font-size: $h3;
+      color: $text-primary;
+      margin-bottom: $space-md;
+      padding-bottom: $space-sm;
+      border-bottom: 1px solid $border;
+    }
+
+    p {
+      color: $text-secondary;
+      line-height: 1.8;
+      font-size: $text-base;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: $space-sm;
+
+      li {
+        color: $text-secondary;
+        font-size: $text-base;
+        line-height: 1.7;
+        padding-left: $space-md;
+        position: relative;
+
+        &::before {
+          content: '→';
+          position: absolute;
+          left: 0;
+          color: $accent;
+        }
+      }
+    }
+  }
+
+  &__tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-xs;
+    margin-top: $space-sm;
+  }
+
+  &__tool-badge {
+    padding: 0.4rem 1rem;
+    background: $bg-card;
+    border: 1px solid $border;
+    border-radius: $radius-sm;
+    font-size: $text-sm;
+    color: $text-secondary;
+  }
+
+  // Dashboard preview
+  &__preview {
+    background: $bg-card;
+    border: 1px solid $border;
+    border-radius: $radius-lg;
+    padding: $space-xl;
+    text-align: center;
+    margin-bottom: $space-2xl;
+
+    p {
+      color: $text-secondary;
+      font-size: $text-sm;
+      margin-bottom: $space-md;
+    }
+  }
+
+  &__impact {
+    background: linear-gradient(135deg, rgba(79, 142, 247, 0.06) 0%, transparent 100%);
+    border: 1px solid $border-hover;
+    border-radius: $radius-lg;
+    padding: $space-xl;
+    margin-bottom: $space-2xl;
+
+    h2 {
+      border-bottom-color: $border-hover;
+    }
+
+    p {
+      color: $text-primary;
+      font-size: $text-lg;
+      line-height: 1.8;
+    }
+  }
+}

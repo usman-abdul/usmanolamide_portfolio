@@ -1,0 +1,196 @@
+@use 'variables' as *;
+
+.about {
+  padding-top: calc($nav-height + $space-3xl);
+  padding-bottom: $space-3xl;
+
+  &__hero {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 $space-lg;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: $space-2xl;
+    align-items: start;
+    margin-bottom: $space-3xl;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__intro {
+    h1 {
+      font-family: $font-heading;
+      font-size: $h1;
+      line-height: 1.1;
+      margin-bottom: $space-md;
+    }
+
+    p {
+      color: $text-secondary;
+      font-size: $text-lg;
+      line-height: 1.8;
+      margin-bottom: $space-md;
+    }
+  }
+
+  &__background {
+    background: $bg-card;
+    border: 1px solid $border;
+    border-radius: $radius-lg;
+    padding: $space-xl;
+
+    h3 {
+      font-family: $font-heading;
+      font-size: $h3;
+      margin-bottom: $space-md;
+    }
+
+    p {
+      color: $text-secondary;
+      line-height: 1.8;
+      margin-bottom: $space-sm;
+    }
+  }
+}
+
+// Skills Grid
+.skills-section {
+  background: $bg-secondary;
+  padding: $space-3xl 0;
+
+  &__inner {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 $space-lg;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $space-sm;
+    margin-top: $space-xl;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    background: $bg-card;
+    border: 1px solid $border;
+    border-radius: $radius-md;
+    padding: $space-md;
+    text-align: center;
+    transition: $transition;
+
+    &:hover {
+      border-color: $border-hover;
+      background: $bg-card-hover;
+    }
+
+    .skill-name {
+      font-size: $text-sm;
+      font-weight: 600;
+      color: $text-primary;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .skill-category {
+      font-size: $text-xs;
+      color: $text-muted;
+    }
+  }
+}
+
+// How I Work
+.how-i-work {
+  padding: $space-3xl 0;
+
+  &__inner {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 $space-lg;
+  }
+
+  &__steps {
+    margin-top: $space-xl;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 28px;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: $border;
+
+      @media (max-width: 640px) {
+        left: 20px;
+      }
+    }
+  }
+
+  &__step {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: $space-md;
+    padding: $space-md 0;
+    position: relative;
+
+    @media (max-width: 640px) {
+      grid-template-columns: 44px 1fr;
+    }
+  }
+
+  &__number {
+    width: 56px;
+    height: 56px;
+    background: $bg-card;
+    border: 1px solid $border;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $text-xs;
+    font-weight: 700;
+    color: $accent;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 640px) {
+      width: 40px;
+      height: 40px;
+      font-size: 0.65rem;
+    }
+  }
+
+  &__content {
+    padding-top: 12px;
+
+    h4 {
+      font-size: $h4;
+      font-weight: 600;
+      color: $text-primary;
+      margin-bottom: $space-xs;
+    }
+
+    p {
+      color: $text-secondary;
+      font-size: $text-sm;
+      line-height: 1.7;
+    }
+  }
+}

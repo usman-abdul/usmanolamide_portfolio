@@ -1,0 +1,122 @@
+@use 'variables' as *;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: $nav-height;
+  background: rgba($bg-primary, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid $border;
+  transition: $transition;
+
+  &__inner {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 $space-lg;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-family: $font-heading;
+    font-size: 1.25rem;
+    color: $text-primary;
+    letter-spacing: -0.02em;
+
+    span {
+      color: $accent;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: $space-lg;
+    list-style: none;
+
+    a {
+      font-size: $text-sm;
+      font-weight: 500;
+      color: $text-secondary;
+      transition: $transition;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background: $accent;
+        transition: $transition;
+      }
+
+      &:hover,
+      &.active {
+        color: $text-primary;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+
+      &.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: $nav-height;
+        left: 0;
+        right: 0;
+        background: $bg-secondary;
+        padding: $space-lg;
+        border-bottom: 1px solid $border;
+        gap: $space-md;
+      }
+    }
+  }
+
+  &__cv {
+    padding: 0.5rem 1.25rem;
+    border: 1px solid $border-hover;
+    border-radius: $radius-sm;
+    font-size: $text-sm;
+    font-weight: 600;
+    color: $accent;
+    transition: $transition;
+
+    &:hover {
+      background: $accent-glow;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+
+    span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: $text-primary;
+      border-radius: 2px;
+      transition: $transition;
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+}

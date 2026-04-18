@@ -1,0 +1,125 @@
+@use 'variables' as *;
+
+.project-card {
+  background: $bg-card;
+  border: 1px solid $border;
+  border-radius: $radius-md;
+  overflow: hidden;
+  transition: $transition-slow;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    border-color: $border-hover;
+    transform: translateY(-6px);
+    box-shadow: $shadow-card-hover;
+
+    .project-card__image img {
+      transform: scale(1.04);
+    }
+
+    .project-card__arrow {
+      transform: translateX(4px);
+      color: $accent;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: $bg-secondary;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: $transition-slow;
+    }
+
+    &--placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      background: linear-gradient(135deg, $bg-secondary 0%, $bg-card-hover 100%);
+
+      .placeholder-icon {
+        font-size: 3rem;
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &__body {
+    padding: $space-md;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__tags {
+    display: flex;
+    gap: $space-xs;
+    flex-wrap: wrap;
+    margin-bottom: $space-sm;
+  }
+
+  &__tag {
+    font-size: $text-xs;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $accent;
+    background: $accent-glow;
+    padding: 3px 10px;
+    border-radius: 100px;
+    border: 1px solid rgba(79, 142, 247, 0.2);
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: $h4;
+    color: $text-primary;
+    margin-bottom: $space-xs;
+    line-height: 1.3;
+  }
+
+  &__description {
+    font-size: $text-sm;
+    color: $text-secondary;
+    line-height: 1.7;
+    flex: 1;
+    margin-bottom: $space-md;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: $space-sm;
+    border-top: 1px solid $border;
+  }
+
+  &__tools {
+    display: flex;
+    gap: $space-xs;
+    flex-wrap: wrap;
+  }
+
+  &__tool {
+    font-size: $text-xs;
+    color: $text-muted;
+    background: $bg-secondary;
+    padding: 2px 8px;
+    border-radius: $radius-sm;
+  }
+
+  &__arrow {
+    font-size: 1.1rem;
+    color: $text-muted;
+    transition: $transition;
+  }
+}
