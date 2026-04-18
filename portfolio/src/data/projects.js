@@ -52,7 +52,7 @@ const projects = [
     impact:
       "Delivered a clear visual case for restructuring the discount policy. Recommended a tiered discount cap by product category, projected to improve overall margin by 10–15%. The Tableau story was designed for direct use in executive presentations, reducing the time from insight to decision.",
     image: "/images/regional-profit.png",
-    link: "#",
+    link: "https://public.tableau.com/views/Tableau_Book1_17765406091470/Dashboard1",
     slug: "profit",
   },
   {
