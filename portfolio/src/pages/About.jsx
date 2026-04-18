@@ -27,7 +27,7 @@ export default function About() {
             <span className="section-label">About Me</span>
             <h1>Engineer. Analyst.<br />AI/ML Enthusiast.</h1>
             <p>
-              I'm Usman Olamide — a Mechatronics Engineer with a deep interest in Robotics,
+              I'm Usman Olamide, a Mechatronics Engineer with a deep interest in Robotics,
               AI/ML, and Data Analytics. My background taught me to think in systems,
               diagnose problems precisely, and optimise for outcomes. That same mindset
               drives everything I do with data.
@@ -50,13 +50,13 @@ export default function About() {
             <h3>Mechatronics → Robotics → AI/ML → Data Analytics</h3>
             <p>
               Mechatronics gave me a foundation in systems thinking, electronics, and
-              precision engineering — skills that translate directly into data work and
+              precision engineering. These skills translate directly into data work and
               machine learning. My interest in Robotics deepened my understanding of
               autonomous systems and intelligent decision-making.
             </p>
             <p>
               Today I specialise in data analytics, business intelligence, and exploratory
-              analysis — with hands-on experience in Python, SQL, Power BI, and Tableau.
+              analysis, with hands-on experience in Python, SQL, Power BI, and Tableau.
               My work spans retail analytics, regional performance analysis, and healthcare
               data research, with a growing focus on AI/ML applications.
             </p>

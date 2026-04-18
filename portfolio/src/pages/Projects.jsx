@@ -15,7 +15,7 @@ export default function Projects() {
           <span className="section-label">My Work</span>
           <h1 className="section-title">Projects & Case Studies</h1>
           <p style={{ color: 'var(--text-secondary, #8892a4)', maxWidth: '520px' }}>
-            Each project follows a full analytical lifecycle — from raw data to business-ready insights.
+            Each project follows a full analytical lifecycle, from raw data to business-ready insights.
           </p>
         </motion.div>
       </div>

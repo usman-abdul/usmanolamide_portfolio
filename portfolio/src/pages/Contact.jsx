@@ -35,7 +35,7 @@ export default function Contact() {
   function handleSubmit(e) {
     e.preventDefault();
     setLoading(true);
-    // Mailto fallback — works without a backend
+    // Mailto fallback, works without a backend
     const mailto = `mailto:your@email.com?subject=${encodeURIComponent(form.subject || 'Portfolio Enquiry')}&body=${encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)}`;
     window.location.href = mailto;
     setTimeout(() => {
@@ -102,7 +102,7 @@ export default function Contact() {
           ) : (
             <>
               <h2 className="contact__form-title">Send a Message</h2>
-              <p className="contact__form-sub">Fill in the form and hit send — it opens your email client.</p>
+              <p className="contact__form-sub">Fill in the form and hit send. It opens your email client.</p>
 
               <form className="contact__form" onSubmit={handleSubmit}>
                 <div className="contact__row">

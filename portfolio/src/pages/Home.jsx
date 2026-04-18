@@ -27,7 +27,7 @@ export default function Home() {
             animate="show"
             custom={0}
           >
-            Usman Olamide — Data Analyst
+            Usman Olamide, Data Analyst
           </motion.span>
 
           <motion.h1
@@ -48,7 +48,7 @@ export default function Home() {
             custom={2}
           >
             I transform complex data into actionable insights that improve decision-making
-            and system performance — across retail, regional, and healthcare domains.
+            and system performance, across retail, regional, and healthcare domains.
           </motion.p>
 
           <motion.div
@@ -80,7 +80,7 @@ export default function Home() {
             <h2>From Raw Data to<br />Real Business Value</h2>
             <p>
               With a foundation in Mechatronics Engineering and a passion for AI/ML and Robotics,
-              I bring a systems-thinking approach to every dataset — understanding not just
+              I bring a systems-thinking approach to every dataset. I focus on understanding not just
               what the numbers say, but why they matter and what to do next.
             </p>
           </motion.div>

@@ -39,7 +39,7 @@ export const workProcess = [
     step: "04",
     title: "Extract Insights",
     description:
-      "I translate patterns into specific, actionable findings — not just observations, but conclusions that mean something to the business.",
+      "I translate patterns into specific, actionable findings. Not just observations, but conclusions that mean something to the business.",
   },
   {
     step: "05",

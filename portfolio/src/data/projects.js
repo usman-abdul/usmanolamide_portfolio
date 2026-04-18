@@ -8,9 +8,9 @@ const projects = [
     problem:
       "A mid-size retail chain had no visibility into which product categories, regions, or discount strategies were driving or eroding profit. Decisions were made on gut feel rather than data, resulting in margin leakage that went undetected for years.",
     approach:
-      "Extracted and cleaned 3 years of transactional sales data across 4 regions and 12 product categories. Built a relational data model in Power BI connecting sales, products, regions, and discount tiers. Designed an interactive dashboard enabling management to slice performance by time period, region, and category — replacing static spreadsheet reports.",
+      "Extracted and cleaned 3 years of transactional sales data across 4 regions and 12 product categories. Built a relational data model in Power BI connecting sales, products, regions, and discount tiers. Designed an interactive dashboard enabling management to slice performance by time period, region, and category, replacing static spreadsheet reports.",
     insights: [
-      "The South-West region consistently underperformed despite high sales volume — root cause identified as excessive discounting eroding margins by up to 22% in peak quarters.",
+      "The South-West region consistently underperformed despite high sales volume. Root cause identified as excessive discounting eroding margins by up to 22% in peak quarters.",
       "Technology products generated the highest revenue but the lowest profit margin, with bulk discount abuse reducing net returns by an estimated 18% annually.",
       "Q4 revenue spikes masked persistent year-round losses in the Furniture category, which showed negative profit in 9 of 12 months analysed.",
       "The West region contributes the highest revenue-to-margin ratio, indicating a strategic opportunity for inventory expansion and targeted marketing investment.",
@@ -32,14 +32,14 @@ const projects = [
     title: "Regional Profit & Discount Analysis",
     domain: "Data Visualisation",
     tools: ["Tableau", "Excel", "Python"],
-    tagline: "Visualising where discounts help — and where they hurt.",
+    tagline: "Visualising where discounts help and where they hurt.",
     problem:
       "Sales leadership could not determine whether their discount strategy was growing market share or simply cannibalising margins across regions. Without a clear visual framework, discount decisions were made inconsistently, with no evidence base for what thresholds were sustainable.",
     approach:
       "Used Python (pandas) to clean and reshape the dataset, handling missing values and normalising discount tiers. Built a Tableau story with regional maps, scatter plots correlating discount rate vs profit, and trend lines per product sub-category. Designed the visualisation to be self-explanatory for non-technical stakeholders.",
     insights: [
-      "Discounts above 20% consistently produced negative profit across all regions — a clear, data-backed threshold for policy reform.",
-      "The Central region achieved the best discount-to-profit ratio, demonstrating that moderate, targeted discounting can drive volume without sacrificing margin — a replicable model for other regions.",
+      "Discounts above 20% consistently produced negative profit across all regions, providing a clear, data-backed threshold for policy reform.",
+      "The Central region achieved the best discount-to-profit ratio, demonstrating that moderate, targeted discounting can drive volume without sacrificing margin. This is a replicable model for other regions.",
       "Binders and Machines sub-categories showed the steepest profit decline under discounting, suggesting these categories are price-inelastic and should be excluded from blanket discount campaigns.",
       "The East region showed the highest variance in profitability, indicating inconsistent discount application that requires standardisation.",
     ],
@@ -60,16 +60,16 @@ const projects = [
     title: "Hypertension Risk Analysis",
     domain: "Healthcare Analytics",
     tools: ["Python", "Pandas", "Matplotlib", "Seaborn"],
-    tagline: "Identifying who is most at risk — and why — using clinical data.",
+    tagline: "Identifying who is most at risk and why, using clinical data.",
     problem:
       "Hypertension is a leading and often silent risk factor for cardiovascular disease, stroke, and kidney failure. Despite its prevalence, many high-risk individuals go unscreened. The goal was to identify which demographic and lifestyle factors most strongly predict elevated blood pressure, enabling earlier and more targeted clinical intervention.",
     approach:
       "Analysed a clinical dataset of 1,000+ patient records using Python. Performed exploratory data analysis (EDA), Pearson correlation analysis, and feature importance ranking. Visualised distributions, risk clusters, and factor relationships using Matplotlib and Seaborn. Segmented patients by age group, BMI range, smoking status, and sodium intake to identify compound risk profiles.",
     insights: [
-      "Patients over 40 were 2.3x more likely to present with elevated blood pressure, with risk increasing sharply after age 50 — supporting age-stratified screening protocols.",
+      "Patients over 40 were 2.3x more likely to present with elevated blood pressure, with risk increasing sharply after age 50. This supports age-stratified screening protocols.",
       "BMI showed a strong positive correlation with systolic blood pressure (r ≈ 0.65), making it one of the most reliable single predictors of hypertension risk in this dataset.",
       "Smoking combined with high sodium intake was the strongest compound risk factor, associated with a 3.1x increase in hypertension likelihood compared to non-smokers with low sodium intake.",
-      "Female patients in the 50–65 age group were the most underdiagnosed segment, with elevated BP present in 41% of cases but flagged in only 18% of records — a significant clinical gap.",
+      "Female patients in the 50–65 age group were the most underdiagnosed segment, with elevated BP present in 41% of cases but flagged in only 18% of records. This represents a significant clinical gap.",
       "Patients with BMI above 30 and age over 45 formed a high-density risk cluster, representing the highest-priority group for preventive intervention.",
     ],
     metrics: [
