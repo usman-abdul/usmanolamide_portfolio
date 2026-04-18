@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar__inner">
         <NavLink to="/" className="navbar__logo">
-          DA<span>.</span>Portfolio
+          Usman<span>.</span>Olamide
         </NavLink>
 
         <ul className={`navbar__links ${menuOpen ? 'open' : ''}`}>

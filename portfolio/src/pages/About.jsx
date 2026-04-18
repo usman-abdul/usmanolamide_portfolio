@@ -25,11 +25,12 @@ export default function About() {
             custom={0}
           >
             <span className="section-label">About Me</span>
-            <h1>Engineer by Training.<br />Analyst by Passion.</h1>
+            <h1>Engineer. Analyst.<br />AI/ML Enthusiast.</h1>
             <p>
-              My journey started in Mechatronics Engineering — a discipline that taught me
-              to think in systems, diagnose problems, and optimise for outcomes. That same
-              mindset now drives how I approach data.
+              I'm Usman Olamide — a Mechatronics Engineer with a deep interest in Robotics,
+              AI/ML, and Data Analytics. My background taught me to think in systems,
+              diagnose problems precisely, and optimise for outcomes. That same mindset
+              drives everything I do with data.
             </p>
             <p>
               I transitioned into Data Analytics because I saw how much value was locked
@@ -46,17 +47,18 @@ export default function About() {
             custom={1}
           >
             <span className="section-label">Background</span>
-            <h3>Mechatronics → Data Analytics</h3>
+            <h3>Mechatronics → Robotics → AI/ML → Data Analytics</h3>
             <p>
-              Mechatronics gave me a foundation in systems thinking, problem decomposition,
-              and precision — skills that translate directly into data work. Where engineers
-              debug machines, I debug datasets.
+              Mechatronics gave me a foundation in systems thinking, electronics, and
+              precision engineering — skills that translate directly into data work and
+              machine learning. My interest in Robotics deepened my understanding of
+              autonomous systems and intelligent decision-making.
             </p>
             <p>
-              I specialise in business intelligence, data visualisation, and exploratory
+              Today I specialise in data analytics, business intelligence, and exploratory
               analysis — with hands-on experience in Python, SQL, Power BI, and Tableau.
               My work spans retail analytics, regional performance analysis, and healthcare
-              data research.
+              data research, with a growing focus on AI/ML applications.
             </p>
           </motion.div>
         </div>

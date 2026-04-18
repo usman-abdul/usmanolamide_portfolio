@@ -27,7 +27,7 @@ export default function Home() {
             animate="show"
             custom={0}
           >
-            Data Analyst
+            Usman Olamide
           </motion.span>
 
           <motion.h1
@@ -37,7 +37,7 @@ export default function Home() {
             animate="show"
             custom={1}
           >
-            Turning Data Into<br />Decisions That Matter
+            Mechatronics Engineer.<br />Data Analyst. AI/ML Enthusiast.
           </motion.h1>
 
           <motion.p
@@ -47,8 +47,8 @@ export default function Home() {
             animate="show"
             custom={2}
           >
-            I analyse complex data to uncover actionable insights in business and health systems —
-            bridging the gap between raw numbers and real-world impact.
+            I sit at the intersection of engineering, robotics, and data — turning complex
+            systems and datasets into decisions that drive real-world impact.
           </motion.p>
 
           <motion.div
@@ -79,7 +79,7 @@ export default function Home() {
             <span className="section-label">What I Do</span>
             <h2>From Raw Data to<br />Real Business Value</h2>
             <p>
-              With a background in Mechatronics Engineering and a focus on Data Analytics,
+              With a foundation in Mechatronics Engineering and a passion for AI/ML and Robotics,
               I bring a systems-thinking approach to every dataset — understanding not just
               what the numbers say, but why they matter and what to do next.
             </p>
