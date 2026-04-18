@@ -173,7 +173,7 @@
 // Skills Snapshot
 .skills-snapshot {
   padding: $space-3xl 0;
-  background: $bg-secondary;
+  background: $bg-surface;
 
   &__inner {
     max-width: $max-width;
@@ -190,7 +190,7 @@
 
   &__badge {
     padding: 0.5rem 1rem;
-    background: $bg-card;
+    background: $bg-base;
     border: 1px solid $border;
     border-radius: 100px;
     font-size: $text-sm;
@@ -198,7 +198,7 @@
     transition: $transition;
 
     &:hover {
-      border-color: $border-hover;
+      border-color: $border-mid;
       color: $accent;
       background: $accent-glow;
     }

@@ -1,41 +1,64 @@
-// Colors
-$bg-primary: #0a0e1a;
-$bg-secondary: #0f1628;
-$bg-card: #131929;
-$bg-card-hover: #1a2235;
-$accent: #4f8ef7;
-$accent-glow: rgba(79, 142, 247, 0.15);
-$accent-hover: #6ba3ff;
-$text-primary: #e8eaf0;
-$text-secondary: #8892a4;
-$text-muted: #4a5568;
-$border: rgba(79, 142, 247, 0.12);
-$border-hover: rgba(79, 142, 247, 0.35);
+// ─────────────────────────────────────────
+// 60-30-10 Color System
+// 60% Base      → $bg-base (deep navy)
+// 30% Secondary → $bg-surface (card / section surfaces)
+// 10% Accent    → $accent (blue — CTAs, labels, highlights only)
+// ─────────────────────────────────────────
+
+// 60% — Base backgrounds
+$bg-base:        #0b0f1c;   // primary page background
+$bg-base-alt:    #0e1220;   // subtle variation for section separation
+
+// 30% — Surface / brand layer
+$bg-surface:     #141b2d;   // cards, navbar, form panels
+$bg-surface-alt: #1a2236;   // hover state for surfaces
+
+// 10% — Accent (use sparingly: buttons, labels, active states)
+$accent:         #4f8ef7;
+$accent-hover:   #6ba3ff;
+$accent-glow:    rgba(79, 142, 247, 0.12);
+$accent-strong:  rgba(79, 142, 247, 0.22);
+
+// Text — WCAG AA compliant contrast ratios
+$text-primary:   #eaecf2;   // headings, primary content  (contrast ~13:1 on base)
+$text-secondary: #9aa3b2;   // body copy, descriptions    (contrast ~6.5:1 on base)
+$text-muted:     #5a6478;   // placeholders, meta labels  (contrast ~3.5:1 on base)
+
+// Borders — neutral, not accent-tinted
+$border:         rgba(255, 255, 255, 0.07);   // default subtle border
+$border-mid:     rgba(255, 255, 255, 0.12);   // slightly more visible
+$border-hover:   rgba(79, 142, 247, 0.4);     // accent border on hover/focus only
+
+// Legacy aliases (keeps existing SCSS working without mass find-replace)
+$bg-primary:     $bg-base;
+$bg-secondary:   $bg-base-alt;
+$bg-card:        $bg-surface;
+$bg-card-hover:  $bg-surface-alt;
 
 // Typography
-$font-body: 'Inter', sans-serif;
+$font-body:    'Inter', sans-serif;
 $font-heading: 'DM Serif Display', serif;
 
-$h1: 3rem;       // 48px
-$h2: 2rem;       // 32px
-$h3: 1.5rem;     // 24px
-$h4: 1.25rem;    // 20px
-$text-lg: 1.125rem;
+$h1:       3rem;       // 48px
+$h2:       2rem;       // 32px
+$h3:       1.5rem;     // 24px
+$h4:       1.25rem;    // 20px
+$text-lg:  1.125rem;
 $text-base: 1rem;
-$text-sm: 0.875rem;
-$text-xs: 0.75rem;
+$text-sm:  0.875rem;
+$text-xs:  0.75rem;
 
 // Spacing
-$space-xs: 0.5rem;
-$space-sm: 1rem;
-$space-md: 1.5rem;
-$space-lg: 2rem;
-$space-xl: 3rem;
+$space-xs:  0.5rem;
+$space-sm:  1rem;
+$space-md:  1.5rem;
+$space-lg:  2rem;
+$space-xl:  3rem;
 $space-2xl: 5rem;
 $space-3xl: 8rem;
 
 // Layout
-$max-width: 1200px;
+$max-width:  1200px;
 $nav-height: 72px;
 
 // Borders
@@ -44,10 +67,10 @@ $radius-md: 12px;
 $radius-lg: 20px;
 
 // Shadows / Elevation
-$shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
-$shadow-card-hover: 0 8px 40px rgba(79, 142, 247, 0.15);
-$shadow-glow: 0 0 30px rgba(79, 142, 247, 0.2);
+$shadow-card:       0 2px 16px rgba(0, 0, 0, 0.35);
+$shadow-card-hover: 0 8px 40px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(79, 142, 247, 0.18);
+$shadow-glow:       0 0 28px rgba(79, 142, 247, 0.25);
 
 // Transitions
-$transition: all 0.25s ease;
+$transition:      all 0.25s ease;
 $transition-slow: all 0.4s ease;

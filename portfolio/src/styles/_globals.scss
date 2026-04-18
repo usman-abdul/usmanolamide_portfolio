@@ -96,11 +96,12 @@ button {
   }
 
   &-outline {
-    border: 1px solid $border-hover;
+    border: 1px solid $border-mid;
     color: $accent;
 
     &:hover {
       background: $accent-glow;
+      border-color: $border-hover;
       transform: translateY(-2px);
     }
   }

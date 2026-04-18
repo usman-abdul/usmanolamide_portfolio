@@ -100,8 +100,9 @@
   // Quantified Results block — most prominent section
   &__results-block {
     margin-bottom: $space-2xl;
-    background: linear-gradient(135deg, rgba(79, 142, 247, 0.07) 0%, rgba(79, 142, 247, 0.02) 100%);
-    border: 1px solid $border-hover;
+    background: $bg-surface;
+    border: 1px solid $border-mid;
+    border-left: 3px solid $accent;
     border-radius: $radius-lg;
     padding: $space-xl;
   }
@@ -128,7 +129,7 @@
   }
 
   &__metric {
-    background: $bg-primary;
+    background: $bg-base;
     border: 1px solid $border;
     border-radius: $radius-md;
     padding: $space-md;
@@ -244,14 +245,15 @@
   }
 
   &__impact {
-    background: linear-gradient(135deg, rgba(79, 142, 247, 0.06) 0%, transparent 100%);
-    border: 1px solid $border-hover;
+    background: $bg-surface;
+    border: 1px solid $border-mid;
+    border-left: 3px solid $accent;
     border-radius: $radius-lg;
     padding: $space-xl;
     margin-bottom: $space-2xl;
 
     h2 {
-      border-bottom-color: $border-hover;
+      border-bottom-color: $border-mid;
     }
 
     p {

@@ -36,7 +36,7 @@
   }
 
   &__background {
-    background: $bg-card;
+    background: $bg-surface;
     border: 1px solid $border;
     border-radius: $radius-lg;
     padding: $space-xl;
@@ -57,7 +57,7 @@
 
 // Skills Grid
 .skills-section {
-  background: $bg-secondary;
+  background: $bg-surface;
   padding: $space-3xl 0;
 
   &__inner {
@@ -82,7 +82,7 @@
   }
 
   &__item {
-    background: $bg-card;
+    background: $bg-base;
     border: 1px solid $border;
     border-radius: $radius-md;
     padding: $space-md;
@@ -90,8 +90,8 @@
     transition: $transition;
 
     &:hover {
-      border-color: $border-hover;
-      background: $bg-card-hover;
+      border-color: $border-mid;
+      background: $bg-surface-alt;
     }
 
     .skill-name {

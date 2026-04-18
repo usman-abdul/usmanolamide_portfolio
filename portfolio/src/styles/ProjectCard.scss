@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
 .project-card {
-  background: $bg-card;
+  background: $bg-surface;
   border: 1px solid $border;
   border-radius: $radius-md;
   overflow: hidden;
@@ -13,7 +13,7 @@
   &:hover {
     border-color: $border-hover;
     transform: translateY(-6px) scale(1.01);
-    box-shadow: $shadow-card-hover, 0 0 0 1px rgba(79, 142, 247, 0.2);
+    box-shadow: $shadow-card-hover;
 
     .project-card__image img {
       transform: scale(1.04);
@@ -29,7 +29,7 @@
     width: 100%;
     height: 200px;
     overflow: hidden;
-    background: $bg-secondary;
+    background: $bg-base-alt;
     position: relative;
 
     img {
@@ -44,11 +44,11 @@
       align-items: center;
       justify-content: center;
       height: 100%;
-      background: linear-gradient(135deg, $bg-secondary 0%, $bg-card-hover 100%);
+      background: linear-gradient(135deg, $bg-base-alt 0%, $bg-surface-alt 100%);
 
       .placeholder-icon {
         font-size: 3rem;
-        opacity: 0.3;
+        opacity: 0.25;
       }
     }
   }
@@ -112,7 +112,7 @@
   &__tool {
     font-size: $text-xs;
     color: $text-muted;
-    background: $bg-secondary;
+    background: $bg-base-alt;
     padding: 2px 8px;
     border-radius: $radius-sm;
   }

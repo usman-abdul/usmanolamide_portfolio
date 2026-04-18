@@ -105,7 +105,7 @@
 
   // Right column — form
   &__form-wrap {
-    background: $bg-card;
+    background: $bg-surface;
     border: 1px solid $border;
     border-radius: $radius-lg;
     padding: $space-xl;
@@ -154,7 +154,7 @@
 
     input,
     textarea {
-      background: $bg-secondary;
+      background: $bg-base;
       border: 1px solid $border;
       border-radius: $radius-sm;
       padding: 0.75rem 1rem;
@@ -171,7 +171,7 @@
 
       &:focus {
         border-color: $border-hover;
-        background: $bg-card-hover;
+        background: $bg-surface-alt;
         box-shadow: 0 0 0 3px rgba(79, 142, 247, 0.08);
       }
     }

@@ -7,8 +7,8 @@
   right: 0;
   z-index: 100;
   height: $nav-height;
-  background: rgba($bg-primary, 0.85);
-  backdrop-filter: blur(12px);
+  background: rgba($bg-surface, 0.92);
+  backdrop-filter: blur(14px);
   border-bottom: 1px solid $border;
   transition: $transition;
 
@@ -77,7 +77,7 @@
         top: $nav-height;
         left: 0;
         right: 0;
-        background: $bg-secondary;
+        background: $bg-surface;
         padding: $space-lg;
         border-bottom: 1px solid $border;
         gap: $space-md;
@@ -87,7 +87,7 @@
 
   &__cv {
     padding: 0.5rem 1.25rem;
-    border: 1px solid $border-hover;
+    border: 1px solid $border-mid;
     border-radius: $radius-sm;
     font-size: $text-sm;
     font-weight: 600;
@@ -96,6 +96,7 @@
 
     &:hover {
       background: $accent-glow;
+      border-color: $border-hover;
     }
   }
 
