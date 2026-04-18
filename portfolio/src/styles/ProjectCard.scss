@@ -28,15 +28,15 @@
 
   &__image {
     width: 100%;
-    height: 200px;
     overflow: hidden;
     background: $bg-base-alt;
     position: relative;
 
     img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
+      display: block;
+      object-fit: contain;
       transition: $transition-slow;
     }
 
@@ -44,7 +44,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100%;
+      height: 200px;
       background: linear-gradient(135deg, $bg-base-alt 0%, $bg-surface-alt 100%);
 
       .placeholder-icon {
