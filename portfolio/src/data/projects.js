@@ -24,6 +24,7 @@ const projects = [
     impact:
       "Identified that reducing discount rates on Technology products by 5–8% could recover an estimated 12–18% in profit margin. Provided management with a single source of truth for monthly performance reviews, replacing a fragmented reporting process. Recommended a regional discount cap policy projected to improve overall profitability within two quarters.",
     image: "/images/Adiddas-retail.png",
+    demo: null,
     link: "#",
     slug: "retail",
   },
@@ -52,7 +53,8 @@ const projects = [
     impact:
       "Delivered a clear visual case for restructuring the discount policy. Recommended a tiered discount cap by product category, projected to improve overall margin by 10–15%. The Tableau story was designed for direct use in executive presentations, reducing the time from insight to decision.",
     image: "/images/regional-profit.png",
-    link: "https://public.tableau.com/views/Tableau_Book1_17765406091470/Dashboard1",
+    demo: "/images/regional-profit.gif",
+    link: "#",
     slug: "profit",
   },
   {
@@ -81,6 +83,7 @@ const projects = [
     impact:
       "Analysis supports prioritising early screening for patients over 40 with high BMI, particularly women in the 50–65 age group who are statistically underdiagnosed. Findings align with WHO hypertension prevention guidelines and provide an evidence base for targeted public health interventions. The compound risk model could be integrated into clinical triage workflows to flag high-risk patients before symptoms present.",
     image: "/images/health-data.png",
+    demo: null,
     link: "#",
     slug: "health",
   },

@@ -161,21 +161,29 @@ export default function ProjectDetailTemplate({ project }) {
             <h3>Interactive Dashboard</h3>
             <p>Explore the full interactive version of this analysis.</p>
           </div>
-          {project.image && (
+          {project.demo ? (
+            <img
+              src={project.demo}
+              alt={`${project.title} dashboard demo`}
+              className="project-detail__preview-image"
+            />
+          ) : project.image ? (
             <img
               src={project.image}
               alt={`${project.title} dashboard preview`}
               className="project-detail__preview-image"
             />
+          ) : null}
+          {project.link && project.link !== '#' && (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              View Interactive Dashboard →
+            </a>
           )}
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary"
-          >
-            View Interactive Dashboard →
-          </a>
         </motion.div>
 
       </div>
