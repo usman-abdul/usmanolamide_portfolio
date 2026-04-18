@@ -1,0 +1,232 @@
+@use 'variables' as *;
+
+.contact {
+  padding-top: calc($nav-height + $space-3xl);
+  padding-bottom: $space-3xl;
+
+  &__inner {
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 $space-lg;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: $space-2xl;
+    align-items: start;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Left column
+  &__info {
+    h1 {
+      font-family: $font-heading;
+      font-size: $h1;
+      line-height: 1.1;
+      margin-bottom: $space-md;
+    }
+
+    p {
+      color: $text-secondary;
+      font-size: $text-lg;
+      line-height: 1.8;
+      margin-bottom: $space-xl;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: $space-sm;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: $space-md;
+    padding: $space-md;
+    background: $bg-card;
+    border: 1px solid $border;
+    border-radius: $radius-md;
+    transition: $transition;
+    color: $text-primary;
+
+    &:hover {
+      border-color: $border-hover;
+      background: $bg-card-hover;
+      transform: translateX(4px);
+
+      .contact__link-arrow {
+        color: $accent;
+        transform: translateX(3px);
+      }
+    }
+
+    &-icon {
+      width: 42px;
+      height: 42px;
+      background: $accent-glow;
+      border: 1px solid rgba(79, 142, 247, 0.2);
+      border-radius: $radius-sm;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    &-text {
+      flex: 1;
+
+      .label {
+        font-size: $text-xs;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $text-muted;
+        display: block;
+        margin-bottom: 2px;
+      }
+
+      .value {
+        font-size: $text-sm;
+        font-weight: 500;
+        color: $text-primary;
+      }
+    }
+
+    &-arrow {
+      color: $text-muted;
+      font-size: 1rem;
+      transition: $transition;
+    }
+  }
+
+  // Right column — form
+  &__form-wrap {
+    background: $bg-card;
+    border: 1px solid $border;
+    border-radius: $radius-lg;
+    padding: $space-xl;
+  }
+
+  &__form-title {
+    font-family: $font-heading;
+    font-size: $h3;
+    margin-bottom: $space-xs;
+  }
+
+  &__form-sub {
+    font-size: $text-sm;
+    color: $text-secondary;
+    margin-bottom: $space-xl;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: $space-md;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $space-md;
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    label {
+      font-size: $text-xs;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: $text-secondary;
+    }
+
+    input,
+    textarea {
+      background: $bg-secondary;
+      border: 1px solid $border;
+      border-radius: $radius-sm;
+      padding: 0.75rem 1rem;
+      font-family: $font-body;
+      font-size: $text-sm;
+      color: $text-primary;
+      transition: $transition;
+      outline: none;
+      resize: none;
+
+      &::placeholder {
+        color: $text-muted;
+      }
+
+      &:focus {
+        border-color: $border-hover;
+        background: $bg-card-hover;
+        box-shadow: 0 0 0 3px rgba(79, 142, 247, 0.08);
+      }
+    }
+
+    textarea {
+      min-height: 130px;
+    }
+  }
+
+  &__submit {
+    width: 100%;
+    padding: 0.85rem;
+    background: $accent;
+    color: #fff;
+    border: none;
+    border-radius: $radius-sm;
+    font-family: $font-body;
+    font-size: $text-sm;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: $transition;
+    margin-top: $space-xs;
+
+    &:hover {
+      background: $accent-hover;
+      transform: translateY(-2px);
+      box-shadow: $shadow-glow;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+  }
+
+  &__success {
+    text-align: center;
+    padding: $space-xl 0;
+
+    .success-icon {
+      font-size: 2.5rem;
+      margin-bottom: $space-sm;
+    }
+
+    h3 {
+      font-family: $font-heading;
+      font-size: $h3;
+      margin-bottom: $space-xs;
+    }
+
+    p {
+      color: $text-secondary;
+      font-size: $text-sm;
+    }
+  }
+}

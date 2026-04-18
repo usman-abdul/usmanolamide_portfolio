@@ -169,7 +169,7 @@ export default function Home() {
               Looking for a data analyst who can communicate insights clearly and drive
               decisions with evidence? Let's talk.
             </p>
-            <a href="mailto:your@email.com" className="btn btn-primary">Get In Touch →</a>
+            <Link to="/contact" className="btn btn-primary">Get In Touch →</Link>
           </motion.div>
         </div>
       </section>

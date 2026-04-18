@@ -16,6 +16,7 @@ export default function Navbar() {
           <li><NavLink to="/" end onClick={() => setMenuOpen(false)}>Home</NavLink></li>
           <li><NavLink to="/about" onClick={() => setMenuOpen(false)}>About</NavLink></li>
           <li><NavLink to="/projects" onClick={() => setMenuOpen(false)}>Projects</NavLink></li>
+          <li><NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink></li>
           <li>
             <a
               href="/cv.pdf"

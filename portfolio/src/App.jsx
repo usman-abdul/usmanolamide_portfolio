@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 import RetailSales from './pages/project-details/RetailSales';
 import RegionalProfit from './pages/project-details/RegionalProfit';
 import HealthData from './pages/project-details/HealthData';
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/projects/retail" element={<RetailSales />} />
         <Route path="/projects/profit" element={<RegionalProfit />} />
         <Route path="/projects/health" element={<HealthData />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>
