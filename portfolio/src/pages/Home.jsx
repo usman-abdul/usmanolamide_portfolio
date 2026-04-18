@@ -27,7 +27,7 @@ export default function Home() {
             animate="show"
             custom={0}
           >
-            Usman Olamide
+            Usman Olamide — Data Analyst
           </motion.span>
 
           <motion.h1
@@ -37,7 +37,7 @@ export default function Home() {
             animate="show"
             custom={1}
           >
-            Mechatronics Engineer.<br />Data Analyst. AI/ML Enthusiast.
+            Specialising in Business<br />Intelligence & Health Analytics.
           </motion.h1>
 
           <motion.p
@@ -47,8 +47,8 @@ export default function Home() {
             animate="show"
             custom={2}
           >
-            I sit at the intersection of engineering, robotics, and data — turning complex
-            systems and datasets into decisions that drive real-world impact.
+            I transform complex data into actionable insights that improve decision-making
+            and system performance — across retail, regional, and healthcare domains.
           </motion.p>
 
           <motion.div

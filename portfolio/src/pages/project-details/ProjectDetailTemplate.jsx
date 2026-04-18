@@ -2,25 +2,31 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import '../../styles/ProjectDetail.scss';
 
+const sectionVariant = {
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+};
+
 export default function ProjectDetailTemplate({ project }) {
   return (
     <main className="project-detail">
       <div className="project-detail__inner">
+
         {/* Back */}
         <Link to="/projects" className="project-detail__back">
           ← Back to Projects
         </Link>
 
-        {/* Tags */}
+        {/* Domain + Tool Tags */}
         <motion.div
           className="project-detail__tags"
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.45 }}
         >
-          <span className="project-detail__tag">{project.domain}</span>
+          <span className="project-detail__tag project-detail__tag--domain">{project.domain}</span>
           {project.tools.map((t) => (
-            <span key={t} className="project-detail__tag" style={{ opacity: 0.7 }}>{t}</span>
+            <span key={t} className="project-detail__tag project-detail__tag--tool">{t}</span>
           ))}
         </motion.div>
 
@@ -29,7 +35,7 @@ export default function ProjectDetailTemplate({ project }) {
           className="project-detail__title"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, delay: 0.1 }}
+          transition={{ duration: 0.55, delay: 0.08 }}
         >
           {project.title}
         </motion.h1>
@@ -38,109 +44,33 @@ export default function ProjectDetailTemplate({ project }) {
           className="project-detail__tagline"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.15 }}
         >
           {project.tagline}
         </motion.p>
 
-        {/* Hero image */}
+        {/* Hero image / placeholder */}
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.25 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
         >
           {project.image ? (
-            <img
-              src={project.image}
-              alt={project.title}
-              className="project-detail__hero-image"
-            />
+            <img src={project.image} alt={project.title} className="project-detail__hero-image" />
           ) : (
             <div className="project-detail__hero-placeholder">📊</div>
           )}
         </motion.div>
 
-        {/* Metrics */}
+        {/* ── Quantified Results (top — most prominent) ── */}
         <motion.div
-          className="project-detail__metrics"
+          className="project-detail__results-block"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.28 }}
         >
-          {project.metrics.map((m) => (
-            <div key={m.label} className="project-detail__metric">
-              <span className="metric-value">{m.value}</span>
-              <span className="metric-label">{m.label}</span>
-            </div>
-          ))}
-        </motion.div>
-
-        {/* Problem */}
-        <motion.div
-          className="project-detail__section"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2>The Problem</h2>
-          <p>{project.problem}</p>
-        </motion.div>
-
-        {/* Approach */}
-        <motion.div
-          className="project-detail__section"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2>Approach</h2>
-          <p>{project.approach}</p>
-        </motion.div>
-
-        {/* Tools */}
-        <motion.div
-          className="project-detail__section"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2>Tools Used</h2>
-          <div className="project-detail__tools">
-            {project.tools.map((tool) => (
-              <span key={tool} className="project-detail__tool-badge">{tool}</span>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* Key Insights */}
-        <motion.div
-          className="project-detail__section"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2>Key Insights</h2>
-          <ul>
-            {project.insights.map((insight, i) => (
-              <li key={i}>{insight}</li>
-            ))}
-          </ul>
-        </motion.div>
-
-        {/* Quantified Results */}
-        <motion.div
-          className="project-detail__section"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2>Quantified Results</h2>
-          <div className="project-detail__metrics" style={{ marginBottom: 0 }}>
+          <span className="project-detail__results-label">Quantified Results</span>
+          <div className="project-detail__metrics">
             {project.metrics.map((m) => (
               <div key={m.label} className="project-detail__metric">
                 <span className="metric-value">{m.value}</span>
@@ -150,27 +80,94 @@ export default function ProjectDetailTemplate({ project }) {
           </div>
         </motion.div>
 
-        {/* Business Impact */}
+        {/* ── Problem ── */}
+        <motion.div
+          className="project-detail__section"
+          variants={sectionVariant}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
+          <h2>The Problem</h2>
+          <p>{project.problem}</p>
+        </motion.div>
+
+        {/* ── Approach ── */}
+        <motion.div
+          className="project-detail__section"
+          variants={sectionVariant}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
+          <h2>Approach</h2>
+          <p>{project.approach}</p>
+        </motion.div>
+
+        {/* ── Tools ── */}
+        <motion.div
+          className="project-detail__section"
+          variants={sectionVariant}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
+          <h2>Tools Used</h2>
+          <div className="project-detail__tools">
+            {project.tools.map((tool) => (
+              <span key={tool} className="project-detail__tool-badge">{tool}</span>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* ── Key Insights ── */}
+        <motion.div
+          className="project-detail__section"
+          variants={sectionVariant}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
+          <h2>Key Insights</h2>
+          <ul>
+            {project.insights.map((insight, i) => (
+              <li key={i}>{insight}</li>
+            ))}
+          </ul>
+        </motion.div>
+
+        {/* ── Business Impact ── */}
         <motion.div
           className="project-detail__section project-detail__impact"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          variants={sectionVariant}
+          initial="hidden"
+          whileInView="show"
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
         >
           <h2>Business Impact</h2>
           <p>{project.impact}</p>
         </motion.div>
 
-        {/* Dashboard Preview */}
+        {/* ── Dashboard Preview ── */}
         <motion.div
           className="project-detail__preview"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          variants={sectionVariant}
+          initial="hidden"
+          whileInView="show"
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
         >
-          <p>View the interactive dashboard for this project</p>
+          <div className="project-detail__preview-header">
+            <span className="section-label">Dashboard Preview</span>
+            <h3>Interactive Dashboard</h3>
+            <p>Explore the full interactive version of this analysis.</p>
+          </div>
+          {project.image && (
+            <img
+              src={project.image}
+              alt={`${project.title} dashboard preview`}
+              className="project-detail__preview-image"
+            />
+          )}
           <a
             href={project.link}
             target="_blank"
@@ -180,6 +177,7 @@ export default function ProjectDetailTemplate({ project }) {
             View Interactive Dashboard →
           </a>
         </motion.div>
+
       </div>
     </main>
   );

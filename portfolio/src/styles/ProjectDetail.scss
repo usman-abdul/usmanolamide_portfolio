@@ -36,11 +36,20 @@
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: $accent;
-    background: $accent-glow;
     padding: 4px 12px;
     border-radius: 100px;
-    border: 1px solid rgba(79, 142, 247, 0.2);
+
+    &--domain {
+      color: $accent;
+      background: $accent-glow;
+      border: 1px solid rgba(79, 142, 247, 0.3);
+    }
+
+    &--tool {
+      color: $text-secondary;
+      background: $bg-card;
+      border: 1px solid $border;
+    }
   }
 
   &__title {
@@ -88,12 +97,30 @@
     }
   }
 
+  // Quantified Results block — most prominent section
+  &__results-block {
+    margin-bottom: $space-2xl;
+    background: linear-gradient(135deg, rgba(79, 142, 247, 0.07) 0%, rgba(79, 142, 247, 0.02) 100%);
+    border: 1px solid $border-hover;
+    border-radius: $radius-lg;
+    padding: $space-xl;
+  }
+
+  &__results-label {
+    display: block;
+    font-size: $text-xs;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $accent;
+    margin-bottom: $space-md;
+  }
+
   // Metrics
   &__metrics {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: $space-sm;
-    margin-bottom: $space-2xl;
 
     @media (max-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
@@ -101,7 +128,7 @@
   }
 
   &__metric {
-    background: $bg-card;
+    background: $bg-primary;
     border: 1px solid $border;
     border-radius: $radius-md;
     padding: $space-md;
@@ -109,7 +136,7 @@
 
     .metric-value {
       font-family: $font-heading;
-      font-size: 1.75rem;
+      font-size: 2rem;
       color: $accent;
       display: block;
       line-height: 1.1;
@@ -118,7 +145,7 @@
     .metric-label {
       font-size: $text-xs;
       color: $text-secondary;
-      margin-top: 6px;
+      margin-top: 8px;
       line-height: 1.4;
     }
   }
@@ -190,10 +217,29 @@
     text-align: center;
     margin-bottom: $space-2xl;
 
-    p {
-      color: $text-secondary;
-      font-size: $text-sm;
+    &-header {
       margin-bottom: $space-md;
+
+      h3 {
+        font-family: $font-heading;
+        font-size: $h3;
+        margin: $space-xs 0;
+      }
+
+      p {
+        color: $text-secondary;
+        font-size: $text-sm;
+      }
+    }
+
+    &-image {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      border-radius: $radius-md;
+      border: 1px solid $border;
+      margin-bottom: $space-lg;
+      opacity: 0.85;
     }
   }
 

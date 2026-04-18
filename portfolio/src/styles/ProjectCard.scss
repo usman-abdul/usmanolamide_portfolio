@@ -12,8 +12,8 @@
 
   &:hover {
     border-color: $border-hover;
-    transform: translateY(-6px);
-    box-shadow: $shadow-card-hover;
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: $shadow-card-hover, 0 0 0 1px rgba(79, 142, 247, 0.2);
 
     .project-card__image img {
       transform: scale(1.04);
