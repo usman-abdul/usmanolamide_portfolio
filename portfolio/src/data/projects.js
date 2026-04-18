@@ -23,7 +23,7 @@ const projects = [
     ],
     impact:
       "Identified that reducing discount rates on Technology products by 5–8% could recover an estimated 12–18% in profit margin. Provided management with a single source of truth for monthly performance reviews, replacing a fragmented reporting process. Recommended a regional discount cap policy projected to improve overall profitability within two quarters.",
-    image: "/images/retail-dashboard.png",
+    image: "/images/Adiddas-retail.png",
     link: "#",
     slug: "retail",
   },
