@@ -48,7 +48,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-shrink: 0;
-    padding-top: $space-xs;
+    padding-top: $space-md;
 
     @media (max-width: 768px) {
       display: none;
