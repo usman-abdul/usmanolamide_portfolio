@@ -62,7 +62,7 @@ export default function Home() {
                 custom={3}
               >
                 <Link to="/projects" className="btn btn-primary">View My Work →</Link>
-                <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                <a href="/UsmanOlamide_CV.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
                   Download CV
                 </a>
               </motion.div>

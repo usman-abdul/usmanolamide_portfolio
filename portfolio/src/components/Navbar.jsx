@@ -19,7 +19,7 @@ export default function Navbar() {
           <li><NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink></li>
           <li>
             <a
-              href="/cv.pdf"
+              href="/UsmanOlamide_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="navbar__cv"

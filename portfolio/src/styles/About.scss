@@ -2,7 +2,7 @@
 
 .about {
   padding-top: calc($nav-height + $space-3xl);
-  padding-bottom: $space-3xl;
+  padding-bottom: $space-xl;
 
   &__hero {
     max-width: $max-width;
@@ -100,7 +100,7 @@
 // Skills Grid
 .skills-section {
   background: $bg-surface;
-  padding: $space-3xl 0;
+  padding: $space-xl 0;
 
   &__inner {
     max-width: $max-width;
@@ -167,7 +167,7 @@
 
 // How I Work
 .how-i-work {
-  padding: $space-3xl 0;
+  padding: $space-xl 0;
 
   &__inner {
     max-width: $max-width;

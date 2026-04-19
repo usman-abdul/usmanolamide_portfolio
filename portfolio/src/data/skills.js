@@ -4,7 +4,7 @@ export const skills = [
   { name: "Power BI", category: "Visualisation", core: true },
   { name: "Tableau", category: "Visualisation", core: true },
   { name: "Machine Learning", category: "AI/ML", core: true },
-  { name: "Excel", category: "Analysis", core: false },
+  { name: "Excel", category: "Analysis", core: true },
   { name: "Pandas", category: "Programming", core: false },
   { name: "Matplotlib", category: "Programming", core: false },
   { name: "Seaborn", category: "Programming", core: false },
