@@ -157,20 +157,20 @@ export default function ProjectDetailTemplate({ project }) {
           viewport={{ once: true }}
         >
           <div className="project-detail__preview-header">
-            <span className="section-label">Dashboard Preview</span>
-            <h3>Interactive Dashboard</h3>
-            <p>Explore the full interactive version of this analysis.</p>
+            <span className="section-label">{project.slug === 'health' ? 'App Demo' : 'Dashboard Preview'}</span>
+            <h3>{project.slug === 'health' ? 'Watch It in Action' : 'Interactive Dashboard'}</h3>
+            <p>{project.slug === 'health' ? 'A walkthrough of the Blood Pressure Predictor web app.' : 'Explore the full interactive version of this analysis.'}</p>
           </div>
           {project.demo ? (
             <img
               src={project.demo}
-              alt={`${project.title} dashboard demo`}
+              alt={`${project.title} demo`}
               className="project-detail__preview-image"
             />
           ) : project.image ? (
             <img
               src={project.image}
-              alt={`${project.title} dashboard preview`}
+              alt={`${project.title} preview`}
               className="project-detail__preview-image"
             />
           ) : null}
@@ -181,7 +181,7 @@ export default function ProjectDetailTemplate({ project }) {
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-              View Interactive Dashboard →
+              {project.slug === 'health' ? 'View Full Project on GitHub →' : 'View Interactive Dashboard →'}
             </a>
           )}
         </motion.div>
