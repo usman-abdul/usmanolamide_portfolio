@@ -37,15 +37,16 @@ export default function About() {
             </motion.div>
 
             <p>
-              I'm Usman Olamide, a Mechatronics Engineer with a deep interest in Robotics,
-              AI/ML, and Data Analytics. My background taught me to think in systems,
-              diagnose problems precisely, and optimise for outcomes. That same mindset
-              drives everything I do with data.
+              I'm Usman Olamide, a Mechatronics Engineer, Data Analyst, and AI/ML Enthusiast.
+              I don't separate these disciplines. I combine them. Engineering precision helps me
+              understand systems. Data analytics helps me read them. AI/ML helps me build tools
+              that make them smarter. Together, these skills let me tackle pain points that
+              single-discipline approaches miss.
             </p>
             <p>
-              I transitioned into Data Analytics because I saw how much value was locked
-              inside data that organisations couldn't read. I build the tools and tell the
-              stories that unlock that value.
+              I build solutions that sit at the intersection of data, engineering, and intelligence,
+              whether that is a business dashboard that exposes hidden profit leakage, or a machine
+              learning app that flags patients at risk before symptoms appear.
             </p>
           </motion.div>
 
@@ -59,16 +60,15 @@ export default function About() {
             <span className="section-label">Background</span>
             <h3>From Mechatronics to Data Analytics</h3>
             <p>
-              Mechatronics gave me a foundation in systems thinking, electronics, and
-              precision engineering. These skills translate directly into data work and
-              machine learning. My interest in Robotics deepened my understanding of
-              autonomous systems and intelligent decision-making.
+              My background in Mechatronics gave me a foundation in systems thinking, electronics,
+              and precision engineering. My work in Robotics deepened my understanding of
+              autonomous systems. My focus on AI/ML and Data Analytics gave me the tools to
+              extract meaning from complex data.
             </p>
             <p>
-              Today I specialise in data analytics, business intelligence, and exploratory
-              analysis, with hands-on experience in Python, SQL, Power BI, and Tableau.
-              My work spans retail analytics, regional performance analysis, and healthcare
-              data research, with a growing focus on AI/ML applications.
+              I bring all of this together. Each skill sharpens the others. I approach every
+              problem as an engineer who can analyse data and build intelligent solutions,
+              not just one of the three.
             </p>
           </motion.div>
         </div>

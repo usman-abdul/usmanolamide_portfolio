@@ -49,8 +49,9 @@ export default function Home() {
                 animate="show"
                 custom={2}
               >
-                Mechatronics Engineer turned Data Analyst. I build dashboards, uncover patterns,
-                and deliver insights that help businesses and health systems make better decisions.
+                Mechatronics Engineer, Data Analyst, and AI/ML Enthusiast. I combine engineering
+                precision, data analysis, and machine learning to build solutions that solve
+                real business problems.
               </motion.p>
 
               <motion.div
@@ -179,8 +180,9 @@ export default function Home() {
             <span className="section-label">Let's Connect</span>
             <h2>Open to New Roles</h2>
             <p>
-              Actively looking for entry-level roles in Data Analysis, Business Intelligence,
-              and AI/ML Engineering. If you have an opportunity or just want to connect, I'd love to hear from you.
+              Looking to work with someone who brings engineering thinking, data skills, and
+              ML capability to the table? I am actively seeking entry-level roles in Data Analysis,
+              Business Intelligence, and AI/ML Engineering. Let's talk.
             </p>
             <Link to="/contact" className="btn btn-primary">Get In Touch →</Link>
           </motion.div>
