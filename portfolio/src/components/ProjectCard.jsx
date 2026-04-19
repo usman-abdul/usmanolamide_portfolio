@@ -9,8 +9,9 @@ export default function ProjectCard({ project }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
+      style={{ display: 'flex', flexDirection: 'column', height: '100%' }}
     >
-      <Link to={`/projects/${project.slug}`} className="project-card">
+      <Link to={`/projects/${project.slug}`} className="project-card" style={{ flex: 1 }}>
         <div className="project-card__image">
           {project.image ? (
             <img src={project.image} alt={project.title} />
