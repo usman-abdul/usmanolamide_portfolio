@@ -19,6 +19,12 @@ body {
   font-size: $text-base;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  text-align: left;
+}
+
+p {
+  text-align: justify;
+  hyphens: auto;
 }
 
 a {
