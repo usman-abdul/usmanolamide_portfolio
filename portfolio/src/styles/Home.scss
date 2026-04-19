@@ -257,12 +257,24 @@
       color: $accent;
       background: $accent-glow;
     }
+
+    &--core {
+      background: $accent-glow;
+      border-color: rgba(79, 142, 247, 0.3);
+      color: $accent;
+      font-weight: 600;
+
+      &:hover {
+        background: rgba(79, 142, 247, 0.22);
+        border-color: $border-hover;
+      }
+    }
   }
 }
 
 // CTA Section
 .home-cta {
-  padding: $space-3xl 0;
+  padding: $space-2xl 0;
   text-align: center;
 
   &__inner {

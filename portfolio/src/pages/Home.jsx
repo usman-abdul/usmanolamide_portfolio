@@ -93,9 +93,10 @@ export default function Home() {
             <span className="section-label">What I Do</span>
             <h2>From Raw Data to<br />Real Business Value</h2>
             <p>
-              With a foundation in Mechatronics Engineering and a passion for AI/ML and Robotics,
-              I bring a systems-thinking approach to every dataset. I focus on understanding not just
-              what the numbers say, but why they matter and what to do next.
+              I combine Mechatronics Engineering, Data Analytics, and AI/ML to build
+              solutions that solve real business problems. Systems thinking from engineering,
+              pattern recognition from data, and predictive power from machine learning.
+              Each discipline makes the others sharper.
             </p>
           </motion.div>
 
@@ -155,7 +156,7 @@ export default function Home() {
             {skills.map((skill, i) => (
               <motion.span
                 key={skill.name}
-                className="skills-snapshot__badge"
+                className={`skills-snapshot__badge${skill.core ? ' skills-snapshot__badge--core' : ''}`}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
