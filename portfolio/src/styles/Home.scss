@@ -51,13 +51,18 @@
   }
 
   &__avatar {
-    width: 200px;
-    height: 200px;
+    width: 340px;
+    height: 340px;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
     border: 3px solid $border-mid;
-    box-shadow: 0 0 0 6px $accent-glow;
+    box-shadow: 0 0 0 8px $accent-glow;
+
+    @media (max-width: 1024px) {
+      width: 260px;
+      height: 260px;
+    }
   }
 
   &__eyebrow {
