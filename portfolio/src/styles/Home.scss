@@ -31,7 +31,7 @@
     display: grid;
     grid-template-columns: 1fr auto;
     gap: $space-2xl;
-    align-items: center;
+    align-items: start;
     justify-items: start;
 
     @media (max-width: 768px) {
@@ -45,9 +45,10 @@
 
   &__avatar-wrap {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-shrink: 0;
+    padding-top: $space-xs;
 
     @media (max-width: 768px) {
       display: none;
