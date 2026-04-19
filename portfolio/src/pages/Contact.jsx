@@ -11,8 +11,8 @@ const contactLinks = [
       </svg>
     ),
     label: 'Email',
-    value: 'your@email.com',
-    href: 'mailto:your@email.com',
+    value: 'usmanolamide233@gmail.com',
+    href: 'mailto:usmanolamide233@gmail.com',
   },
   {
     icon: (
@@ -21,8 +21,8 @@ const contactLinks = [
       </svg>
     ),
     label: 'LinkedIn',
-    value: 'linkedin.com/in/usman-olamide',
-    href: 'https://linkedin.com/in/usman-olamide',
+    value: 'linkedin.com/in/olamide-usman',
+    href: 'https://www.linkedin.com/in/olamide-usman-632697240/',
   },
   {
     icon: (
@@ -49,7 +49,7 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
     // Mailto fallback, works without a backend
-    const mailto = `mailto:your@email.com?subject=${encodeURIComponent(form.subject || 'Portfolio Enquiry')}&body=${encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)}`;
+    const mailto = `mailto:usmanolamide233@gmail.com?subject=${encodeURIComponent(form.subject || 'Portfolio Enquiry')}&body=${encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)}`;
     window.location.href = mailto;
     setTimeout(() => {
       setLoading(false);

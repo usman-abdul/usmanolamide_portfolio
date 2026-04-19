@@ -39,7 +39,7 @@ export default function Home() {
                 animate="show"
                 custom={1}
               >
-                Specialising in Business<br />Intelligence & Health Analytics.
+                I turn messy data into<br />clear decisions.
               </motion.h1>
 
               <motion.p
@@ -49,8 +49,8 @@ export default function Home() {
                 animate="show"
                 custom={2}
               >
-                I transform complex data into actionable insights that improve decision-making
-                and system performance, across retail, regional, and healthcare domains.
+                Mechatronics Engineer turned Data Analyst. I build dashboards, uncover patterns,
+                and deliver insights that help businesses and health systems make better decisions.
               </motion.p>
 
               <motion.div
@@ -177,10 +177,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <span className="section-label">Let's Connect</span>
-            <h2>Open to Opportunities</h2>
+            <h2>Open to New Roles</h2>
             <p>
-              Looking for a data analyst who can communicate insights clearly and drive
-              decisions with evidence? Let's talk.
+              Actively looking for entry-level roles in Data Analysis, Business Intelligence,
+              and AI/ML Engineering. If you have an opportunity or just want to connect, I'd love to hear from you.
             </p>
             <Link to="/contact" className="btn btn-primary">Get In Touch →</Link>
           </motion.div>

@@ -57,7 +57,7 @@ export default function About() {
             custom={1}
           >
             <span className="section-label">Background</span>
-            <h3>Mechatronics → Robotics → AI/ML → Data Analytics</h3>
+            <h3>From Mechatronics to Data Analytics</h3>
             <p>
               Mechatronics gave me a foundation in systems thinking, electronics, and
               precision engineering. These skills translate directly into data work and
