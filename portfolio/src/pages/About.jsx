@@ -17,6 +17,18 @@ export default function About() {
       <div className="about">
         {/* Intro */}
         <div className="about__hero">
+
+          {/* Photo — left */}
+          <motion.div
+            className="about__photo-wrap"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            <img src="/images/avatar.jpeg" alt="Usman Olamide" className="about__photo" />
+          </motion.div>
+
+          {/* Text — right */}
           <motion.div
             className="about__intro"
             variants={fadeUp}
@@ -26,16 +38,6 @@ export default function About() {
           >
             <span className="section-label">About Me</span>
             <h1>Engineer. Analyst.<br />AI/ML Enthusiast.</h1>
-
-            <motion.div
-              className="about__photo-wrap"
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <img src="/images/avatar.jpeg" alt="Usman Olamide" className="about__photo" />
-            </motion.div>
-
             <p>
               I'm Usman Olamide, a Mechatronics Engineer, Data Analyst, and AI/ML Enthusiast.
               I don't separate these disciplines. I combine them. Engineering precision helps me
@@ -50,6 +52,7 @@ export default function About() {
             </p>
           </motion.div>
 
+          {/* Background card — spans full width below */}
           <motion.div
             className="about__background"
             variants={fadeUp}
@@ -83,7 +86,7 @@ export default function About() {
             {skills.map((skill, i) => (
               <motion.div
                 key={skill.name}
-                className="skills-section__item"
+                className={`skills-section__item${skill.core ? ' skills-section__item--core' : ''}`}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
