@@ -35,6 +35,26 @@
     }
   }
 
+  &__photo-wrap {
+    margin-bottom: $space-lg;
+  }
+
+  &__photo {
+    width: 100%;
+    max-width: 340px;
+    height: 340px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: $radius-lg;
+    border: 1px solid $border-mid;
+    box-shadow: $shadow-card;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+      height: 260px;
+    }
+  }
+
   &__background {
     background: $bg-surface;
     border: 1px solid $border;

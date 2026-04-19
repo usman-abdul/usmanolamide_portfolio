@@ -24,6 +24,40 @@
     max-width: $max-width;
     margin: 0 auto;
     padding: 0 $space-lg;
+    width: 100%;
+  }
+
+  &__layout {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: $space-2xl;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__text {
+    max-width: 600px;
+  }
+
+  &__avatar-wrap {
+    flex-shrink: 0;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid $border-mid;
+    box-shadow: 0 0 0 6px $accent-glow;
   }
 
   &__eyebrow {

@@ -26,6 +26,16 @@ export default function About() {
           >
             <span className="section-label">About Me</span>
             <h1>Engineer. Analyst.<br />AI/ML Enthusiast.</h1>
+
+            <motion.div
+              className="about__photo-wrap"
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <img src="/images/avatar.jpeg" alt="Usman Olamide" className="about__photo" />
+            </motion.div>
+
             <p>
               I'm Usman Olamide, a Mechatronics Engineer with a deep interest in Robotics,
               AI/ML, and Data Analytics. My background taught me to think in systems,

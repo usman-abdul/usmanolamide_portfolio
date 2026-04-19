@@ -20,49 +20,62 @@ export default function Home() {
       {/* Hero */}
       <section className="hero">
         <div className="hero__content">
-          <motion.span
-            className="hero__eyebrow"
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            custom={0}
-          >
-            Usman Olamide, Data Analyst
-          </motion.span>
+          <div className="hero__layout">
+            <div className="hero__text">
+              <motion.span
+                className="hero__eyebrow"
+                variants={fadeUp}
+                initial="hidden"
+                animate="show"
+                custom={0}
+              >
+                Usman Olamide, Data Analyst
+              </motion.span>
 
-          <motion.h1
-            className="hero__name"
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            custom={1}
-          >
-            Specialising in Business<br />Intelligence & Health Analytics.
-          </motion.h1>
+              <motion.h1
+                className="hero__name"
+                variants={fadeUp}
+                initial="hidden"
+                animate="show"
+                custom={1}
+              >
+                Specialising in Business<br />Intelligence & Health Analytics.
+              </motion.h1>
 
-          <motion.p
-            className="hero__tagline"
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            custom={2}
-          >
-            I transform complex data into actionable insights that improve decision-making
-            and system performance, across retail, regional, and healthcare domains.
-          </motion.p>
+              <motion.p
+                className="hero__tagline"
+                variants={fadeUp}
+                initial="hidden"
+                animate="show"
+                custom={2}
+              >
+                I transform complex data into actionable insights that improve decision-making
+                and system performance, across retail, regional, and healthcare domains.
+              </motion.p>
 
-          <motion.div
-            className="hero__cta"
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            custom={3}
-          >
-            <Link to="/projects" className="btn btn-primary">View My Work →</Link>
-            <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
-              Download CV
-            </a>
-          </motion.div>
+              <motion.div
+                className="hero__cta"
+                variants={fadeUp}
+                initial="hidden"
+                animate="show"
+                custom={3}
+              >
+                <Link to="/projects" className="btn btn-primary">View My Work →</Link>
+                <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                  Download CV
+                </a>
+              </motion.div>
+            </div>
+
+            <motion.div
+              className="hero__avatar-wrap"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+            >
+              <img src="/images/avatar.jpeg" alt="Usman Olamide" className="hero__avatar" />
+            </motion.div>
+          </div>
         </div>
       </section>
 
