@@ -82,7 +82,7 @@ const projects = [
     ],
     impact:
       "Demonstrated that a 97% accurate model can be fundamentally broken — and fixed it. The retrained model genuinely uses multiple clinical features to classify blood pressure status, making it suitable as a triage support tool. The project is deployed as a live Flask web app and the full codebase is available on GitHub. The key takeaway: diagnosing why a model behaves the way it does, and fixing data bias, is what separates real ML work from just running a notebook.",
-    image: "/images/health-data.png",
+    image: "/images/health_ml.png",
     demo: null,
     link: "https://github.com/usman-abdul/blood-pressure-prediction",
     slug: "health",
